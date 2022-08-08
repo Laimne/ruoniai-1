@@ -31,11 +31,13 @@ let saugiklis = 10000000000;
 let kartai = 0;
 let count = 0;
 
+let iskrito;
+
 do {
     if (!(saugiklis--)) break;
 
     count++;
-    let iskrito;
+
     iskrito = rand(0, 1) ? 'S' : 'H';
     if ('H' == iskrito) {
         kartai++;
