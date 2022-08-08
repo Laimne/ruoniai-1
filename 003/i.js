@@ -35,7 +35,10 @@ do {
     iskrito = rand(0, 1) ? 'S' : 'H';
     console.log(iskrito);
 
-} while (iskrito != 'B');
+} while (iskrito != 'H');
+
+
+
 
 
 
