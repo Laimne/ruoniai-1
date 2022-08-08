@@ -24,18 +24,29 @@ while (turiu <= 1000) {
 }
 
 
-let iskrito;
 
-let saugiklis = 10;
+
+let saugiklis = 10000000000;
+
+let kartai = 0;
+let count = 0;
 
 do {
-
     if (!(saugiklis--)) break;
 
+    count++;
+    let iskrito;
     iskrito = rand(0, 1) ? 'S' : 'H';
-    console.log(iskrito);
+    if ('H' == iskrito) {
+        kartai++;
+    } else {
+        kartai = 0;
+    }
+    // console.log(iskrito);
 
-} while (iskrito != 'H');
+} while (kartai != 20);
+
+console.log(count);
 
 
 
