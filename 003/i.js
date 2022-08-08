@@ -26,13 +26,16 @@ while (turiu <= 1000) {
 
 let iskrito;
 
+let saugiklis = 10;
+
 do {
 
+    if (!(saugiklis--)) break;
 
     iskrito = rand(0, 1) ? 'S' : 'H';
     console.log(iskrito);
 
-} while (iskrito != 'H');
+} while (iskrito != 'B');
 
 
 
