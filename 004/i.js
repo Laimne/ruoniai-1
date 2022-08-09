@@ -50,13 +50,7 @@ function fun2(f) {
 const ats = fun2(() => 5 * 1000);
 
 
-
-
-
 console.log(ats);
-
-
-
 
 
 // console.log(fun(u, u));
