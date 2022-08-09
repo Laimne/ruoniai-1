@@ -26,7 +26,7 @@ while (turiu <= 1000) {
 
 
 
-let saugiklis = 10000000000;
+let saugiklis = 100;
 
 let kartai = 0;
 let count = 0;
@@ -49,6 +49,8 @@ do {
 } while (kartai != 20);
 
 console.log(count);
+
+saugiklis = 100;
 
 
 
