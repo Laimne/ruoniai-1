@@ -30,7 +30,42 @@ function rand(min, max) {
 
 // console.log(ats);
 
-const filter = sp.filter(el => el.type == 'car')
-    .map(el => ({...el, name: 'ZIL' }));
+// const filter = sp.filter(el => el.type == 'car')
+//     .map(el => ({...el, name: 'ZIL' }));
 
-console.log(filter);
+const filter = sp.filter(el => el.name != 'Tomas');
+
+console.log([...sp]);
+
+// sp.sort((a, b) => {
+//     if (a.name > b.name) {
+//         return -1;
+//     }
+//     if (a.name < b.name) {
+//         return 1;
+//     }
+//     return 0;
+// });
+
+// sp.sort((a, b) => b.id - a.id);
+
+
+sp.sort((a, b) => b.name.localeCompare(a.name));
+
+console.log([...sp]);
+
+const array1 = [1];
+
+console.log(array1.reduce((previousValue, currentValue) => previousValue + currentValue));
+
+
+// const array2 = [1, 2, 3, 4];
+
+// // 0 + 1 + 2 + 3 + 4
+// const initialValue = 0;
+// const sumWithInitial = array2.reduce(
+//   (previousValue, currentValue) => previousValue + currentValue,
+//   initialValue
+// );
+
+// console.log(sumWithInitial);
