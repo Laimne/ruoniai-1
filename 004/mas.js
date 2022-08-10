@@ -45,3 +45,18 @@ mas2.push([50, 80, 102]);
 
 
 mas2.forEach(aukstas => aukstas.forEach(skaicius => console.log(skaicius)));
+
+function rand(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+let tarpine = '';
+for (let i = 0; i < 5; i++) {
+
+    tarpine = tarpine + rand(10, 20) + ' ';
+
+}
+
+console.log(tarpine);
