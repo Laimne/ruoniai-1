@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+.field {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: cornflowerblue;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: coral;
+    position: absolute;
+}
+
+h1 {
+    color: firebrick;
+    position: absolute;
+    z-index: 10;
+    left: 30px;
+}
