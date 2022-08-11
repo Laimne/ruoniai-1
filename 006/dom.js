@@ -44,7 +44,7 @@ const start = () => {
             c.style.display = 'none';
         }
         h1.innerText = 'Good: ' + count + ' Left:' + balls;
-    }, 1000);
+    }, 5000);
     return timerId
 }
 h1.innerText = 'Good: ' + count + ' Left:' + balls;
