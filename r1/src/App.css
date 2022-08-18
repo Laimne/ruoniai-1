@@ -36,3 +36,25 @@
         transform: rotate(360deg);
     }
 }
+
+.black,
+.white {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    color: black;
+    background-color: white;
+}
