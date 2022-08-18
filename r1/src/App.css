@@ -9,7 +9,13 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-        animation: App-logo-spin infinite 2s cubic-bezier(0, 1.54, .71, .99);
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo2 {
+        animation: App-logo-spin2 infinite 21s linear;
     }
 }
 
@@ -34,6 +40,15 @@
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes App-logo-spin2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
     }
 }
 

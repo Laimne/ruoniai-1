@@ -31,9 +31,9 @@ function App() {
           <span>{cats[2].name}</span>
         </div> */}
         {
-          cats.map((cat, i) => <div key={i} className="cat" style={{ backgroundColor: cat.color }}>
-            <span>{cat.name}</span>
-          </div>)
+          cats.map((cat, i) =>  <div key={i} className="cat App-logo" style={{ backgroundColor: cat.color }}>
+                                  <span className="App-logo2">{cat.name}</span>
+                                </div>)
         }
 
       </header>
