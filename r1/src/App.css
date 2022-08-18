@@ -58,3 +58,19 @@
     color: black;
     background-color: white;
 }
+
+.cat {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    transform: rotate(30deg);
+}
+
+.cat span {
+    color: pink;
+    transform: rotate(-30deg);
+}
