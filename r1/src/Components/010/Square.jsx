@@ -16,7 +16,7 @@ function Square({color, name, size, show}) {
             }}>
             <span className="App-logo2">{name}</span>
         </div>
-    )
+    );
 }
 
 export default Square;
