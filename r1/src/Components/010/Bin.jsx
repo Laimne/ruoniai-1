@@ -1,9 +1,9 @@
 import Star from "./Star";
 
-function Bin({color}) {
+function Bin({color, size}) {
 
     return (
-        <Star color={color} />
+        <Star color={color} size={size} />
     )
 }
 

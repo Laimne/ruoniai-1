@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Props</h1>
-        <Bin color="crimson" />
+        <Bin color="crimson" size={188} />
             {
                 squares.filter(sq => sq.size < 200).map((s, i) => <Square key={i} color={s.color} name={s.name} size={s.size} show={s.show} />)
             }

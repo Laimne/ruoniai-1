@@ -1,7 +1,11 @@
-function Star({color}) {
+function Star({color, size}) {
 
     return (
-        <h1 style={{color: color}}>*</h1>
+        <h1 className="App-logo2" style={{
+            color: color,
+            fontSize: size + 'px',
+            margin: 0 
+        }}>*</h1>
     )
 }
 
