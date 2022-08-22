@@ -14,7 +14,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Props</h1>
-            
+            {
+                squares.map((s, i) => <Square key={i} color={s.color} name={s.name} size={s.size} show={s.show} />)
+            }
       </header>
     </div>
   );
