@@ -8,7 +8,7 @@ const cats = [
   { name: 'Pilkis', color: 'gray' },
   { name: 'Ufo', color: 'yellow' },
   { name: 'Pūkis', color: 'white' },
-  { name: 'Būlkius', color: 'gray' },
+  { name: 'Būlkius', color: 'skyblue' },
 ]
 
 function App() {
