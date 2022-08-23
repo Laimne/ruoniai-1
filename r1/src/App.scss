@@ -89,3 +89,26 @@
     color: pink;
     transform: rotate(-30deg);
 }
+
+.dog-bin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .dog {
+        width: 150px;
+        height: 150px;
+        color: pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: skyblue;
+        margin: 6px;
+        &.cc {
+            border-radius: 50%;
+        }
+        &.sq {
+            border-radius: 10px;
+        }
+    }
+}
