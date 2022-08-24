@@ -1,12 +1,12 @@
 import './App.scss';
-import Dog from './Components/012/Dog';
+import Dog from './Components/011/Dog';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>STATE</h1>
-        <Dog color="crimson" />
+        <Dog color="crimson"/>
       </header>
     </div>
   );
