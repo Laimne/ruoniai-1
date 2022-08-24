@@ -1,5 +1,6 @@
 import { useState } from "react";
 import randColor from '../../Functions/randColor';
+import rand from '../../Functions/rand';
 
 function Dog() {
 
@@ -21,7 +22,7 @@ function Dog() {
     };
 
     const add = () => {
-        setSq(s => [...s, {color: randColor()}]);
+        setSq(s => [...s, {color: randColor(), number: rand(100, 999)}]);
     }
 
     return (
@@ -33,7 +34,7 @@ function Dog() {
         <button onClick={doIt}>Press this button, please</button>
         <div className="dog-bin">
             {
-                sq.map((c, i) => <div style={{backgroundColor: c.color}} className="dog sq" key={i}></div>)
+                sq.map((c, i) => <div style={{backgroundColor: c.color}} className="dog sq" key={i}>{c.number}</div>)
             }
         </div>
         <button onClick={add}>[]</button>
