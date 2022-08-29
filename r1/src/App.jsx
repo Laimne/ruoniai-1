@@ -1,32 +1,49 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.scss';
-import Books from './Components/013/Books';
-import axios from 'axios';
 
 function App() {
 
-    const [books, setBooks] = useState(null);
 
-    // fetch('https://in3.dev/knygos/')
-    // .then((response) => response.json())
-    // .then((data) => setBooks(data))
-    // .catch(_ => setBooks('ERROR'));
+    const [count, setCount] = useState(1);
+
+    const [read, setRead] = useState(null)
+
+    const save = () => {
+        localStorage.setItem('number', count);
+        const jobj = JSON.stringify({cat: 'big'});
+        localStorage.setItem('obj', jobj);
+    }
+
+    const readNumber = () => {
+        setRead(localStorage.getItem('number'));
+        const obj = JSON.parse(localStorage.getItem('obj'));
+        console.log(obj.cat);
+    }
 
     useEffect(() => {
-        axios.get('https://in3.dev/knygos/')
-        .then(res => setBooks(res.data))
-        .catch(_ => setBooks('ERROR'))
+        setRead(localStorage.getItem('number'));
+        const obj = JSON.parse(localStorage.getItem('obj'));
+        if (null === obj) {
+            console.log('Cat gone');
+        } else {
+            console.log(obj.cat);
+        }
+        
     }, []);
-   
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Books books={books} />
-      </header>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            <header className="App-header">
+                <h1>Pirmadienis Nr: {count}</h1>
+                <h1>Nuskaityta Nr: {read}</h1>
+                <button onClick={() => setCount(c => c + 1)}>+1</button>
+                <button onClick={save}>Save</button>
+                <button onClick={readNumber}>Read</button>
+            </header>
+        </div>
+    );
 }
 
 export default App;
