@@ -95,6 +95,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 20px;
     .dog {
         width: 150px;
         height: 150px;
@@ -213,4 +214,12 @@ button {
     to {
         transform: translateX(45px)
     }
+}
+
+input {
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 10px;
 }
