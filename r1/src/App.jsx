@@ -67,7 +67,7 @@ function App() {
                
                 <div className="field">
                     <h1><span>GANYKLA</span>
-                        <button onClick={start}>Į Ganyklą</button>
+                        <button onClick={start}>Į Ganyklą Taip</button>
                     </h1>
                     <div className="left">
                         {
