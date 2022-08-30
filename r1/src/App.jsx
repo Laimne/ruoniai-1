@@ -1,4 +1,5 @@
-import './App.scss';
+import'./App.scss';
+
 
 function App() {
 
@@ -12,9 +13,11 @@ function App() {
                 <div className='field'></div>
                     <div className='left'></div>
                 
+
+   
+                
             </header>
         </div>
     );
 }
-
 export default App;
