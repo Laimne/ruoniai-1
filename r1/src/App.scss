@@ -223,3 +223,72 @@ input {
     padding: 5px;
     margin: 10px;
 }
+
+.field {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    background-color: skyblue;
+    .left {
+        width: 49%;
+        height: 100vh;
+        border-right: 3px dashed orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .right {
+        width: 49%;
+        height: 100vh;
+        border-left: 3px dashed orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    h1 {
+        position: absolute;
+        top: 15px;
+        font-size: 48px;
+        background-color: skyblue;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 48px;
+        button {
+            margin-left: 10px;
+            position: relative;
+            top: 4px;
+        }
+    }
+    .cow {
+        width: 120px;
+        height: 120px;
+        border: 1px dashed olive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 7px;
+    }
+    .sheep {
+        width: 120px;
+        height: 120px;
+        border: 1px dashed grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 7px;
+    }
+}
