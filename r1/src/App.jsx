@@ -1,17 +1,19 @@
 import './App.scss';
-import Checkbox from './Components/016/Checkbox';
-import Select from './Components/016/Select';
+import Text from './Components/017/Text';
+import { useState } from "react";
+import Show from './Components/017/Show';
 
 function App() {
 
+    const [showText, setShowText] = useState('');
+
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-7">
-                    <Select />
-                    <Checkbox />
-                </div>
-            </div>
+        <div className="App">
+            <header className="App-header">
+                <h1>State Uplifting</h1>
+                <Text setShowText={setShowText} />
+                <Show showText={showText} />
+            </header>
         </div>
     );
 }
