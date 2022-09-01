@@ -3,7 +3,6 @@ import Text from './Components/017/Text';
 import { useState } from "react";
 import Show from './Components/017/Show';
 
-
 function App() {
 
     const [showText, setShowText] = useState('');
