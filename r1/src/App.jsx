@@ -4,14 +4,17 @@ import { useState } from "react";
 import Show from './Components/017/Show';
 
 
+
 function App() {
 
     const [showText, setShowText] = useState('');
+
 
     return (
         <div className="App">
             <header className="App-header">
                 <h1>State Uplifting</h1>
+                <h1>State Uplifting AND useRef</h1>
                 <Text setShowText={setShowText} />
                 <Show showText={showText} />
             </header>
