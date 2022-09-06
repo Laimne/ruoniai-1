@@ -1,22 +1,14 @@
 import './App.scss';
-import Text from './Components/017/Text';
-import { useState } from "react";
-import Show from './Components/017/Show';
-
 
 
 function App() {
 
-    const [showText, setShowText] = useState('');
-
-
-    return (
+    return  (
+        
         <div className="App">
             <header className="App-header">
-                <h1>State Uplifting</h1>
-                <h1>State Uplifting AND useRef</h1>
-                <Text setShowText={setShowText} />
-                <Show showText={showText} />
+                <h1>Contex +REDUCER+StarContext +Provider</h1>
+                
             </header>
         </div>
     );
