@@ -147,7 +147,8 @@ button {
     width: auto;
     &:hover,
     &:focus {
-        background-color: #fb8332;
+        // background-color: #fb8332;
+        background-color: #82451d;
         box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     }
     &:hover {
@@ -311,5 +312,17 @@ input {
         margin: 10px;
         font-weight: bold;
         font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+.red-square {
+    border: 3px dotted crimson;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        color: crimson;
     }
 }
